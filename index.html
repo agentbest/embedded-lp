@@ -1,0 +1,699 @@
+<title>エージェントベスト｜IoT・組込みエンジニアの転職（年収を上げる）</title>
+<meta name="description" content="組込み・IoTエンジニアの年収は、スキルではなく「どこで組込みをやっているか」で決まります。国内IoT市場は2028年に10兆円規模へ。車載SDV・半導体・ロボティクス・IoTプロダクトなど、ソフトが製品価値の中心にある場所へ移るための転職支援です。">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XXMP8Y1B4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1XXMP8Y1B4');
+</script>
+
+<style>
+  :root{
+    --paper:#F6F5FA;
+    --surface:#FFFFFF;
+    --surface-2:#EDEBF5;
+    --ink:#15131F;
+    --ink-soft:#4A4560;
+    --ink-faint:#7E7995;
+    --line:#E1DDEE;
+    --line-strong:#C6C0DC;
+    --accent:#6D28D9;
+    --accent-hover:#5B21B6;
+    --accent-tint:#EDE6FD;
+    --accent-ink:#5A21B0;
+    --amber:#B45309;
+    --amber-tint:#FBEEDC;
+    --navy:#0F0D18;
+    --navy-2:#171426;
+    --on-navy:#EBE8F5;
+    --on-navy-soft:#9C95B5;
+    --on-navy-line:#28233C;
+
+    --sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",YuGothic,"Noto Sans JP","Segoe UI",sans-serif;
+    --mono:"SFMono-Regular","SF Mono","Cascadia Code",Consolas,"Roboto Mono","Courier New",monospace;
+
+    --maxw:1120px;
+    --radius:8px;
+    --shadow:0 1px 2px rgba(21,19,31,.05),0 12px 32px -18px rgba(21,19,31,.3);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#0B0A12;--surface:#151322;--surface-2:#11101C;--ink:#EBE8F5;--ink-soft:#A69FBD;
+      --ink-faint:#767090;--line:#241F36;--line-strong:#332C4B;--accent:#A78BFA;--accent-hover:#C0A9FF;
+      --accent-tint:#1D1630;--accent-ink:#B39BFB;--amber:#E0A94A;--amber-tint:#241C10;
+      --navy:#070610;--navy-2:#0E0C18;--on-navy:#EBE8F5;--on-navy-soft:#948DAD;--on-navy-line:#221D34;
+      --shadow:0 1px 2px rgba(0,0,0,.5),0 18px 40px -20px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="light"]{
+    --paper:#F6F5FA;--surface:#FFFFFF;--surface-2:#EDEBF5;--ink:#15131F;--ink-soft:#4A4560;
+    --ink-faint:#7E7995;--line:#E1DDEE;--line-strong:#C6C0DC;--accent:#6D28D9;--accent-hover:#5B21B6;
+    --accent-tint:#EDE6FD;--accent-ink:#5A21B0;--amber:#B45309;--amber-tint:#FBEEDC;
+    --navy:#0F0D18;--navy-2:#171426;--on-navy:#EBE8F5;--on-navy-soft:#9C95B5;--on-navy-line:#28233C;
+    --shadow:0 1px 2px rgba(21,19,31,.05),0 12px 32px -18px rgba(21,19,31,.3);
+  }
+  :root[data-theme="dark"]{
+    --paper:#0B0A12;--surface:#151322;--surface-2:#11101C;--ink:#EBE8F5;--ink-soft:#A69FBD;
+    --ink-faint:#767090;--line:#241F36;--line-strong:#332C4B;--accent:#A78BFA;--accent-hover:#C0A9FF;
+    --accent-tint:#1D1630;--accent-ink:#B39BFB;--amber:#E0A94A;--amber-tint:#241C10;
+    --navy:#070610;--navy-2:#0E0C18;--on-navy:#EBE8F5;--on-navy-soft:#948DAD;--on-navy-line:#221D34;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 18px 40px -20px rgba(0,0,0,.8);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--sans);line-height:1.78;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,p{margin:0}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .mono{font-family:var(--mono)}
+  .eyebrow{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-ink);font-weight:700}
+
+  /* ---------- nav ---------- */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:color-mix(in srgb,var(--paper) 84%,transparent);
+    backdrop-filter:saturate(1.4) blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em}
+  .brand .glyph{
+    width:26px;height:26px;border-radius:5px;flex:none;
+    background:linear-gradient(150deg,var(--accent),var(--amber));
+    display:grid;place-items:center;color:#fff;font-family:var(--mono);font-size:.78rem;font-weight:700;
+  }
+  .brand small{display:block;font-family:var(--mono);font-size:.56rem;letter-spacing:.18em;color:var(--ink-faint);font-weight:600}
+  .nav-links{display:flex;align-items:center;gap:24px}
+  .nav-links a{font-size:.85rem;color:var(--ink-soft);font-weight:700}
+  .nav-links a:hover{color:var(--accent)}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;font-weight:800;
+    font-size:.89rem;padding:12px 22px;border-radius:5px;cursor:pointer;border:1px solid transparent;
+    transition:transform .15s ease,background .2s ease,box-shadow .2s ease;white-space:nowrap;
+  }
+  .btn-primary{background:var(--accent);color:#fff;box-shadow:0 10px 24px -12px var(--accent)}
+  .btn-primary:hover{background:var(--accent-hover);transform:translateY(-1px)}
+  .btn-ghost{border-color:var(--line-strong);color:var(--ink);background:transparent}
+  .btn-ghost:hover{border-color:var(--accent)}
+  .btn-lg{padding:16px 32px;font-size:1rem}
+  @media (max-width:960px){.nav-links a:not(.btn){display:none}}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;background:var(--navy);color:var(--on-navy);overflow:hidden}
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(58% 54% at 82% 4%,rgba(167,139,250,.18),transparent 62%),
+      radial-gradient(50% 46% at 2% 96%,rgba(224,169,74,.12),transparent 64%);
+    pointer-events:none;
+  }
+  /* 基板トレース風グリッド */
+  .hero-pcb{
+    position:absolute;inset:0;opacity:.6;pointer-events:none;
+    background-image:
+      linear-gradient(var(--on-navy-line) 1px,transparent 1px),
+      linear-gradient(90deg,var(--on-navy-line) 1px,transparent 1px);
+    background-size:100% 40px,40px 100%;
+    -webkit-mask-image:linear-gradient(180deg,transparent,#000 18%,#000 72%,transparent);
+            mask-image:linear-gradient(180deg,transparent,#000 18%,#000 72%,transparent);
+  }
+  .hero-in{position:relative;padding:78px 0 72px}
+  .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;color:#A78BFA;
+    font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+  .hero-eyebrow .dot{width:7px;height:7px;background:#A78BFA;box-shadow:0 0 0 4px rgba(167,139,250,.18)}
+  h1.hero-title{
+    font-weight:900;letter-spacing:-.02em;
+    font-size:clamp(2rem,5.4vw,3.7rem);line-height:1.3;margin:24px 0 0;text-wrap:balance;
+  }
+  h1.hero-title .hl{color:#A78BFA}
+  .hero-lead{margin:26px 0 0;max-width:39em;color:var(--on-navy-soft);font-size:1.04rem}
+  .hero-lead b{color:var(--on-navy);font-weight:800}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin:34px 0 0;align-items:center}
+  .hero-cta .note{font-family:var(--mono);font-size:.72rem;color:var(--on-navy-soft);letter-spacing:.04em}
+  .hero-trust{display:flex;flex-wrap:wrap;gap:30px;margin:44px 0 0;padding:24px 0 0;border-top:1px solid var(--on-navy-line)}
+  .hero-trust .item .n{font-family:var(--mono);font-size:1.55rem;font-weight:700;color:var(--on-navy);font-variant-numeric:tabular-nums}
+  .hero-trust .item .n em{font-style:normal;color:#A78BFA;font-size:.95rem;margin-left:2px}
+  .hero-trust .item .l{font-size:.76rem;color:var(--on-navy-soft);max-width:15em;line-height:1.6}
+
+  /* hero bars */
+  .hchart{margin:52px 0 0;max-width:640px}
+  .hchart .cap{font-family:var(--mono);font-size:.63rem;letter-spacing:.16em;color:var(--on-navy-soft);text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:8px}
+  .hchart .cap::before{content:"";width:16px;height:1px;background:#A78BFA}
+  .hrow{display:grid;grid-template-columns:186px 1fr auto;align-items:center;gap:14px;margin:11px 0}
+  .hrow .lab{font-size:.78rem;font-weight:700;color:var(--on-navy);line-height:1.35}
+  .hrow .track{display:block;height:20px;background:rgba(255,255,255,.05);border-radius:3px;overflow:hidden}
+  .hrow .fill{display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,#7C4DDB,#C3A6FF);width:0;transition:width 1.2s cubic-bezier(.2,.7,.2,1)}
+  .hrow.ref .fill{background:#3A3350}
+  .hrow .v{font-family:var(--mono);font-weight:700;font-size:.88rem;color:var(--on-navy);font-variant-numeric:tabular-nums;min-width:70px;text-align:right}
+  .hchart .src{margin-top:16px;font-family:var(--mono);font-size:.65rem;line-height:1.75;color:var(--on-navy-soft)}
+  .hchart .src b{color:var(--on-navy)}
+  @media (max-width:620px){
+    .hrow{grid-template-columns:110px 1fr auto;gap:9px}
+    .hrow .lab{font-size:.68rem}
+    .hero-trust{gap:22px}
+  }
+
+  /* ---------- sections ---------- */
+  section{padding:88px 0}
+  .band{background:var(--surface-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;flex-direction:column;gap:14px;margin-bottom:44px;max-width:46em}
+  .sec-head h2{font-weight:900;font-size:clamp(1.6rem,3.6vw,2.4rem);line-height:1.42;letter-spacing:-.02em;text-wrap:balance}
+  .sec-head p{color:var(--ink-soft);font-size:1.01rem}
+  .sec-index{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;color:var(--accent-ink);text-transform:uppercase;font-weight:700}
+
+  .lead-quote{font-size:clamp(1.4rem,3.2vw,2.05rem);line-height:1.6;font-weight:900;text-wrap:balance;max-width:22em;letter-spacing:-.02em}
+  .lead-quote .u{background:linear-gradient(transparent 66%,var(--accent-tint) 66%);padding:0 .06em}
+  .lead-body{margin-top:24px;max-width:42em;color:var(--ink-soft);font-size:1.01rem}
+  .lead-body b{color:var(--ink);font-weight:800}
+
+  /* cause cards */
+  .cause{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+  .cs{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;display:flex;flex-direction:column;gap:10px}
+  .cs .no{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--accent-ink);font-weight:700}
+  .cs h3{font-size:1.04rem;font-weight:900;line-height:1.5}
+  .cs p{font-size:.9rem;color:var(--ink-soft)}
+  .cs p b{color:var(--ink);font-weight:800}
+  @media (max-width:900px){.cause{grid-template-columns:1fr}}
+
+  /* destination cards */
+  .dst-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .dst{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px 30px;display:flex;flex-direction:column;gap:12px;box-shadow:var(--shadow);transition:transform .2s ease,border-color .2s ease}
+  .dst:hover{transform:translateY(-3px);border-color:var(--accent)}
+  .dst .top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .dst .ind{font-family:var(--mono);font-size:.63rem;letter-spacing:.1em;color:var(--ink-faint);font-weight:700}
+  .dst .lv{font-family:var(--mono);font-size:.58rem;font-weight:700;letter-spacing:.06em;padding:4px 9px;border-radius:3px;white-space:nowrap;background:var(--accent-tint);color:var(--accent-ink)}
+  .dst .lv.b{background:var(--amber-tint);color:var(--amber)}
+  .dst h3{font-size:1.1rem;font-weight:900;line-height:1.45}
+  .dst p{font-size:.91rem;color:var(--ink-soft)}
+  .dst p b{color:var(--ink);font-weight:800}
+  .dst .tags{margin-top:auto;padding-top:14px;border-top:1px dashed var(--line-strong);display:flex;gap:8px;flex-wrap:wrap}
+  .dst .tags span{font-family:var(--mono);font-size:.63rem;font-weight:700;padding:4px 9px;border-radius:4px;background:var(--surface-2);color:var(--ink-soft)}
+  @media (max-width:680px){.dst-grid{grid-template-columns:1fr}}
+
+  /* conversion table */
+  .conv-tbl{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+  .conv-head{display:grid;grid-template-columns:1fr 44px 1fr;gap:12px;padding:16px 26px;background:var(--surface-2);border-bottom:1px solid var(--line);
+    font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;color:var(--ink-faint);font-weight:700;text-transform:uppercase}
+  .conv-head span:nth-child(2){text-align:center}
+  .conv-row{display:grid;grid-template-columns:1fr 44px 1fr;gap:12px;padding:18px 26px;border-bottom:1px solid var(--line);align-items:center}
+  .conv-row:last-child{border-bottom:none}
+  .conv-row .from b{display:block;font-size:.94rem;font-weight:800;color:var(--ink)}
+  .conv-row .from span{font-size:.81rem;color:var(--ink-faint)}
+  .conv-row .ar{text-align:center;color:var(--accent);font-family:var(--mono);font-weight:700;font-size:1.05rem}
+  .conv-row .to b{display:block;font-size:.94rem;font-weight:800;color:var(--accent-ink)}
+  .conv-row .to span{font-size:.81rem;color:var(--ink-soft)}
+  @media (max-width:640px){
+    .conv-head{display:none}
+    .conv-row{grid-template-columns:1fr;gap:6px;padding:20px 22px}
+    .conv-row .ar{text-align:left;font-size:.9rem}
+  }
+
+  /* routes */
+  .rt{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .rt-c{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;display:flex;flex-direction:column;gap:11px;position:relative;overflow:hidden}
+  .rt-c::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--amber))}
+  .rt-c .no{font-family:var(--mono);font-size:1.7rem;font-weight:700;color:var(--accent);opacity:.3;line-height:1}
+  .rt-c h3{font-size:1.06rem;font-weight:900;line-height:1.5}
+  .rt-c p{font-size:.89rem;color:var(--ink-soft)}
+  .rt-c p b{color:var(--ink);font-weight:800}
+  .rt-c .ex{margin-top:auto;padding-top:12px;border-top:1px dashed var(--line-strong);font-size:.79rem;color:var(--ink-faint)}
+  .rt-c .ex b{color:var(--accent-ink);font-weight:800}
+  @media (max-width:900px){.rt{grid-template-columns:1fr}}
+
+  /* bars section */
+  .bars{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:30px 32px;margin-top:24px;box-shadow:var(--shadow)}
+  .bars .bt{font-size:.94rem;font-weight:900;margin-bottom:6px}
+  .bars .bsub{font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;color:var(--ink-faint);margin-bottom:24px}
+  .bar-row{display:grid;grid-template-columns:230px 1fr auto;align-items:center;gap:14px;margin:13px 0}
+  .bar-row .lab{font-size:.79rem;font-weight:800;color:var(--ink-soft);line-height:1.35}
+  .bar-row .track{display:block;height:24px;background:var(--surface-2);border-radius:4px;overflow:hidden}
+  .bar-row .fill{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,var(--accent),var(--amber));width:0;transition:width 1.15s cubic-bezier(.2,.7,.2,1)}
+  .bar-row.ref .fill{background:var(--line-strong)}
+  .bar-row .val{font-family:var(--mono);font-weight:700;font-size:.9rem;font-variant-numeric:tabular-nums;min-width:78px;text-align:right}
+  .src{margin-top:20px;font-family:var(--mono);font-size:.68rem;color:var(--ink-faint);line-height:1.75}
+  @media (max-width:640px){.bar-row{grid-template-columns:120px 1fr auto;gap:9px}.bar-row .lab{font-size:.66rem}.bar-row .val{min-width:64px;font-size:.8rem}}
+
+  /* honest two-col */
+  .hn{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .hn-col{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
+  .hn-col header{padding:20px 26px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px}
+  .hn-col header .mk{font-family:var(--mono);font-weight:800;font-size:1rem;width:28px;height:28px;border-radius:5px;display:grid;place-items:center;flex:none}
+  .hn-col.get header .mk{background:var(--accent-tint);color:var(--accent-ink)}
+  .hn-col.lose header .mk{background:var(--amber-tint);color:var(--amber)}
+  .hn-col header h3{font-size:1.04rem;font-weight:900}
+  .hn-col ul{list-style:none;margin:0;padding:20px 26px 26px;display:flex;flex-direction:column;gap:13px}
+  .hn-col li{display:flex;gap:11px;font-size:.91rem;color:var(--ink-soft);line-height:1.75}
+  .hn-col li::before{content:"+";color:var(--accent);font-weight:800;font-family:var(--mono);flex:none}
+  .hn-col.lose li::before{content:"−";color:var(--amber)}
+  .hn-col li b{color:var(--ink);font-weight:800}
+  @media (max-width:680px){.hn{grid-template-columns:1fr}}
+  .hn-note{margin-top:24px;font-size:.9rem;color:var(--ink-soft);max-width:46em;padding:18px 22px;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:6px}
+  .hn-note b{color:var(--ink)}
+
+  /* process */
+  .proc{position:relative;margin-top:8px}
+  .proc::before{content:"";position:absolute;left:19px;top:8px;bottom:8px;width:2px;background:var(--line-strong)}
+  .step{position:relative;padding:0 0 32px 62px}
+  .step:last-child{padding-bottom:0}
+  .step .marker{position:absolute;left:8px;top:2px;width:24px;height:24px;border-radius:5px;
+    background:var(--surface);border:2px solid var(--line-strong);display:grid;place-items:center;
+    font-family:var(--mono);font-size:.67rem;font-weight:700;color:var(--ink-soft);z-index:1}
+  .step:nth-child(-n+3) .marker{border-color:var(--accent);color:var(--accent)}
+  .step .ph{font-family:var(--mono);font-size:.65rem;letter-spacing:.16em;color:var(--ink-faint)}
+  .step h3{font-size:1.06rem;font-weight:900;margin:4px 0 6px}
+  .step p{color:var(--ink-soft);font-size:.92rem;max-width:40em}
+
+  /* faq */
+  .faq{display:flex;flex-direction:column;gap:12px;max-width:840px}
+  details{background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:4px 22px;transition:border-color .2s}
+  details[open]{border-color:var(--accent)}
+  summary{list-style:none;cursor:pointer;padding:18px 0;font-weight:800;font-size:1rem;display:flex;align-items:center;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary .q{font-family:var(--mono);color:var(--accent);font-size:.79rem;flex:none}
+  summary .chev{margin-left:auto;transition:transform .2s;color:var(--ink-faint)}
+  details[open] summary .chev{transform:rotate(180deg)}
+  details p{padding:0 0 20px 34px;color:var(--ink-soft);font-size:.92rem}
+
+  /* final */
+  .final{background:var(--navy);color:var(--on-navy);border-radius:12px;padding:64px 48px;text-align:center;position:relative;overflow:hidden}
+  .final::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(52% 62% at 16% 0%,rgba(167,139,250,.20),transparent 62%),
+    radial-gradient(52% 62% at 88% 100%,rgba(224,169,74,.14),transparent 62%)}
+  .final>*{position:relative}
+  .final .eyebrow{color:#A78BFA}
+  .final h2{font-weight:900;font-size:clamp(1.7rem,4.2vw,2.8rem);line-height:1.4;margin:16px 0 0;text-wrap:balance;letter-spacing:-.02em}
+  .final p{color:var(--on-navy-soft);margin:18px auto 0;max-width:34em}
+  .final .hero-cta{justify-content:center}
+  @media (max-width:620px){.final{padding:48px 24px}}
+
+  /* footer */
+  footer.ft{border-top:1px solid var(--line);padding:44px 0;color:var(--ink-faint);font-size:.79rem}
+  .ft-links{display:flex;flex-wrap:wrap;gap:14px 26px;margin-bottom:24px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+  .ft-links a{color:var(--ink-soft);font-weight:800;font-size:.87rem}
+  .ft-links a:hover{color:var(--accent)}
+  .ft-in{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+  .ft-in .disc{max-width:46em;line-height:1.75}
+
+  /* reveal */
+  .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .rv.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+  /* cross-site links */
+  .ft-sites-title{font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;color:var(--ink-faint);font-weight:700;margin:0 0 12px;text-transform:uppercase}
+  .ft-sites-links{margin-bottom:24px}
+</style>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="エージェントベスト">
+      <span class="glyph">AB</span>
+      <span>AGENTBEST<small>EMBEDDED / IoT</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#why">上がらない理由</a>
+      <a href="#demand">需要の変化</a>
+      <a href="#dest">移り先</a>
+      <a href="#skill">スキルの値付け</a>
+      <a href="#routes">3つのルート</a>
+      <a href="#faq">よくある質問</a>
+      <a href="https://calendly.com/r_matsuoka" target="_blank" rel="noopener" class="btn btn-primary">無料で年収診断</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" style="padding:0">
+    <div class="hero-pcb"></div>
+    <div class="wrap hero-in">
+      <span class="hero-eyebrow"><span class="dot"></span>IoT・組込みエンジニアの転職</span>
+      <h1 class="hero-title">あなたの年収は、<br>スキルではなく<span class="hl">座組みで決まっている。</span></h1>
+      <p class="hero-lead">
+        RTOSもベアメタルも書ける。回路図も読める。それでも給与テーブルは、隣の席の人と同じ幅でしか動かない——
+        組込みエンジニアの年収が伸びにくいのは、能力の問題ではありません。<b>ハードの原価にソフトの価値が乗らない構造の中にいるから</b>です。
+        いま国内のIoT市場は<b>2028年に10兆円規模</b>へ向かっています。ソフトウェアが製品価値の中心になった領域では、同じスキルの値段が変わります。
+        <b>やることを変えずに、値段のつく場所へ移る。</b>それが、このページで扱う話です。
+      </p>
+      <div class="hero-cta">
+        <a href="https://calendly.com/r_matsuoka" target="_blank" rel="noopener" class="btn btn-primary btn-lg">無料で年収の見立てを聞く →</a>
+        <a href="#why" class="btn btn-ghost btn-lg" style="border-color:var(--on-navy-line);color:var(--on-navy)">なぜ上がらないのか</a>
+        <span class="note">相談1分／在職中OK／完全無料</span>
+      </div>
+
+      <div class="hero-trust">
+        <div class="item"><div class="n">10.2<em>兆円</em></div><div class="l">2028年の国内IoT市場（2023年は6.9兆円）</div></div>
+        <div class="item"><div class="n">8.0<em>%</em></div><div class="l">同市場の年平均成長率（2023→2028）</div></div>
+        <div class="item"><div class="n">429<em>万円</em></div><div class="l">正社員の平均年収（2025年・全職種）</div></div>
+        <div class="item"><div class="n">0<em>円</em></div><div class="l">相談から入社後まで費用</div></div>
+      </div>
+
+      <!-- salary bars -->
+      <div class="hchart rv">
+        <div class="cap">SALARY — 同じITエンジニアでも、業種で平均が動く</div>
+        <div class="hrow"><span class="lab">ITコンサルティング</span><span class="track"><span class="fill" data-w="100%"></span></span><span class="v">505万</span></div>
+        <div class="hrow"><span class="lab">ハードウェア／ソフトウェア／<br>パッケージベンダ</span><span class="track"><span class="fill" data-w="98%"></span></span><span class="v">493万</span></div>
+        <div class="hrow"><span class="lab">システムインテグレータ</span><span class="track"><span class="fill" data-w="95%"></span></span><span class="v">481万</span></div>
+        <div class="hrow ref"><span class="lab">正社員 全体平均（全職種）</span><span class="track"><span class="fill" data-w="85%"></span></span><span class="v">429万</span></div>
+        <p class="src">
+          出典：パーソルキャリア「doda 平均年収ランキング2025」。正社員の平均年収は429万円で、2022年以降3年連続の上昇・過去8年で最高値。<br>
+          ※ これは業種の<b>平均</b>です。個人のレンジは、担当する製品領域と会社の収益構造でこれよりはるかに大きく開きます。<b>組込み職種そのものの公的な平均値は公表されていないため、当ページでは断定していません。</b>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <div class="wrap">
+      <p class="sec-index rv">01 — なぜ、上がらないのか</p>
+      <p class="lead-quote rv" style="margin-top:16px">
+        スキル不足ではなく、<br><span class="u">値段のつき方</span>の問題です。
+      </p>
+      <p class="lead-body rv">
+        組込みの仕事が評価されにくいのには、はっきりした理由が3つあります。
+        どれも個人の努力では動かせないもので、<b>だからこそ「頑張って評価を上げる」より「場所を変える」ほうが早い</b>のが実情です。
+      </p>
+      <div class="cause">
+        <div class="cs rv">
+          <span class="no">CAUSE 01</span>
+          <h3>ソフトが、原価に乗らない</h3>
+          <p>ハードウェア製品の価格は部品表と製造原価で決まります。<b>ソフトウェアは「製品に付いてくるもの」として扱われ、単体では値段がつかない。</b>その構造の中では、ソフト側の人件費はコストとしか見なされません。</p>
+        </div>
+        <div class="cs rv">
+          <span class="no">CAUSE 02</span>
+          <h3>分業で、担当範囲が小さい</h3>
+          <p>大手メーカーでは、機種・レイヤー・工程が細かく分かれています。<b>「このデバイスドライバの担当」という粒度だと、成果を製品の売上と結びつけて語れません。</b>職務経歴書に書ける実績も細くなります。</p>
+        </div>
+        <div class="cs rv">
+          <span class="no">CAUSE 03</span>
+          <h3>給与テーブルが、製造業基準</h3>
+          <p>組込みの人材市場は狭く、社内の等級表がそのまま上限になりがちです。<b>同じC/C++でも、ソフトが売上そのものである会社に行けば別の給与テーブルが適用されます。</b>スキルの値段は、業界で決まっています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEMAND ============ -->
+  <section class="band" id="demand">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-index">02 — 需要の側で起きていること</span>
+        <h2>製品の価値が、<br>ハードからソフトへ移りました。</h2>
+        <p>この10年で、モノの競争力を決めるものが変わりました。組込みエンジニアにとっては、追い風のはずの変化です。</p>
+      </div>
+      <p class="lead-body rv" style="margin-top:0">
+        国内のIoT市場（ユーザー支出額）は、<b>2023年の6兆9,189億円から2028年に10兆1,653億円へ</b>、年平均8.0%で拡大すると予測されています。
+        車はソフトウェアで機能が更新される前提（SDV）になり、産業機器は稼働データを吸い上げるサービスに変わり、家電はアプリとつながるのが当たり前になりました。
+        <b>つまり「組込みができる人」の価値は上がっている。上がっていないのは、置かれている場所のほうです。</b>
+      </p>
+
+      <div class="bars rv">
+        <div class="bt">国内IoT市場（ユーザー支出額）は5年で1.5倍近くへ</div>
+        <div class="bsub">IDC Japan 予測 ／ 単位：億円</div>
+        <div class="bar-row"><span class="lab">2028年（予測）</span><span class="track"><span class="fill" data-w="100%"></span></span><span class="val">101,653</span></div>
+        <div class="bar-row ref"><span class="lab">2023年（実績）</span><span class="track"><span class="fill" data-w="68%"></span></span><span class="val">69,189</span></div>
+        <p class="src">出典：IDC Japan「国内IoT市場 産業分野別／テクノロジー別予測」。2023年〜2028年の年間平均成長率（CAGR）は8.0%。※ 将来予測であり、確定した数値ではありません。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DESTINATION ============ -->
+  <section id="dest">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-index">03 — 移り先</span>
+        <h2>同じ組込みでも、<br>値段のつく場所があります。</h2>
+        <p>共通しているのは「ソフトウェアが、売上そのものになっている」こと。以下はご経験に応じてご提案する領域のイメージです。※ 具体的な社名と年収レンジは面談時に個別にご案内します。</p>
+      </div>
+      <div class="dst-grid">
+        <div class="dst rv">
+          <div class="top"><span class="ind">AUTOMOTIVE / SDV</span><span class="lv">需要 最大</span></div>
+          <h3>車載ソフトウェア・SDV</h3>
+          <p>車が「売った後に機能が増える製品」に変わり、ソフトウェアが車両価値を決めるようになりました。<b>AUTOSAR、車載Linux、機能安全（ISO 26262）の経験は、そのまま希少価値になります。</b>完成車メーカー、Tier1、車載ソフト専業、外資系サプライヤと選択肢も広い領域です。</p>
+          <div class="tags"><span>AUTOSAR</span><span>ISO 26262</span><span>CAN / Ethernet</span><span>外資も多い</span></div>
+        </div>
+        <div class="dst rv">
+          <div class="top"><span class="ind">SEMICONDUCTOR</span><span class="lv">待遇 高</span></div>
+          <h3>半導体・SoC／ファブレス</h3>
+          <p>国策としての投資が続き、待遇水準が業界全体で引き上がっている領域。<b>ドライバ、ファームウェア、ブートローダ、低レイヤの最適化ができる人材が慢性的に不足しています。</b>外資系半導体は給与テーブルそのものが違います。</p>
+          <div class="tags"><span>ドライバ / FW</span><span>低レイヤ最適化</span><span>外資系</span><span>投資拡大中</span></div>
+        </div>
+        <div class="dst rv">
+          <div class="top"><span class="ind">ROBOTICS / FA</span><span class="lv">裁量 大</span></div>
+          <h3>ロボティクス・産業機器</h3>
+          <p>制御・センサ・リアルタイム処理の知識がそのまま中核になる領域。<b>スタートアップでは、制御からアプリまで一人で見る裁量が得られます。</b>ストックオプションを含めた実質待遇で比較すべき求人が多いのも特徴です。</p>
+          <div class="tags"><span>制御 / センサ</span><span>ROS</span><span>0→1</span><span>SO あり</span></div>
+        </div>
+        <div class="dst rv">
+          <div class="top"><span class="ind">IoT PRODUCT</span><span class="lv b">キャリア転換</span></div>
+          <h3>IoTプロダクト・ハードウェアSaaS</h3>
+          <p>デバイスを売って終わりではなく、<b>継続課金のサービスとして売る会社</b>。ソフトが売上に直結するため、評価も報酬もソフト基準になります。デバイスとクラウドの両方が分かる人材は、ここでは代えがききません。</p>
+          <div class="tags"><span>デバイス × クラウド</span><span>SaaS収益</span><span>リモート可も</span></div>
+        </div>
+        <div class="dst rv">
+          <div class="top"><span class="ind">MEDICAL / ENERGY</span><span class="lv b">専門性が効く</span></div>
+          <h3>医療機器・エネルギー・インフラ</h3>
+          <p>規制産業ゆえに参入障壁が高く、<b>品質・安全に厳しい環境で開発してきた経験が、そのまま評価されます。</b>納期に追われるより、正しく作ることが求められる文化。働き方が安定しやすいのも特徴です。</p>
+          <div class="tags"><span>規制対応</span><span>品質重視</span><span>働き方 安定</span></div>
+        </div>
+        <div class="dst rv">
+          <div class="top"><span class="ind">EDGE AI</span><span class="lv">伸長中</span></div>
+          <h3>エッジAI・組込みAI</h3>
+          <p>推論をクラウドではなくデバイス側で走らせる領域。<b>限られたメモリと電力で性能を出す技術は、まさに組込みエンジニアの土俵です。</b>AI人材の中でも供給が薄く、掛け算での希少性が最も出やすい選択肢です。</p>
+          <div class="tags"><span>エッジ推論</span><span>省電力最適化</span><span>希少性 高</span></div>
+        </div>
+      </div>
+      <p style="margin-top:22px;font-size:.8rem;color:var(--ink-faint);font-family:var(--mono);line-height:1.75" class="rv">※ 上記は領域のイメージです。実在の企業名・ロゴは含みません。ご経験に合わせて最適な求人をご提案します。</p>
+    </div>
+  </section>
+
+  <!-- ============ SKILL ============ -->
+  <section class="band" id="skill">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-index">04 — スキルの値付け</span>
+        <h2>いまの経験は、<br>言い換えれば強くなります。</h2>
+        <p>組込みエンジニアの職務経歴書は「担当した工程」で書かれがちです。それを「何ができる人か」に翻訳するだけで、通過率も提示レンジも変わります。</p>
+      </div>
+      <div class="conv-tbl rv">
+        <div class="conv-head"><span>いまの書き方</span><span></span><span>評価される言い換え</span></div>
+        <div class="conv-row">
+          <div class="from"><b>デバイスドライバの開発</b><span>「〜のドライバを担当」</span></div>
+          <div class="ar">→</div>
+          <div class="to"><b>ハードを直接叩ける低レイヤ人材</b><span>半導体・SoC・車載で最も採用したい層。データシートから実装に落とせる人は希少です</span></div>
+        </div>
+        <div class="conv-row">
+          <div class="from"><b>RTOS／ベアメタル開発</b><span>「リアルタイム制御の実装」</span></div>
+          <div class="ar">→</div>
+          <div class="to"><b>制約下で性能を出せる設計力</b><span>限られたメモリ・電力で動かす技術は、エッジAI領域でそのまま価値になります</span></div>
+        </div>
+        <div class="conv-row">
+          <div class="from"><b>量産立ち上げ・不具合対応</b><span>「工場対応、市場不具合の解析」</span></div>
+          <div class="ar">→</div>
+          <div class="to"><b>最後まで製品を出しきる力</b><span>スタートアップが最も欲しがる経験。量産を知らないチームは、ここで必ず詰まります</span></div>
+        </div>
+        <div class="conv-row">
+          <div class="from"><b>回路図が読める／基板がわかる</b><span>「ハード担当と連携」</span></div>
+          <div class="ar">→</div>
+          <div class="to"><b>ハードとソフトを橋渡しできる</b><span>ソフト専業の会社では代替がききません。単独で切り分けができる人材として評価されます</span></div>
+        </div>
+        <div class="conv-row">
+          <div class="from"><b>機能安全・品質規格の対応</b><span>「ISO 26262 / IEC 61508 の文書作成」</span></div>
+          <div class="ar">→</div>
+          <div class="to"><b>規制産業で開発できる資格</b><span>車載・医療・インフラでは必須要件。これ自体が転職市場での通行証になります</span></div>
+        </div>
+        <div class="conv-row">
+          <div class="from"><b>ベンダ・外注の管理</b><span>「委託先の進捗管理」</span></div>
+          <div class="ar">→</div>
+          <div class="to"><b>開発全体を回せるマネジメント</b><span>技術がわかるPMは希少。年収レンジを一段上げる最短ルートのひとつです</span></div>
+        </div>
+      </div>
+      <p style="margin-top:22px;font-size:.86rem;color:var(--ink-faint)" class="rv">※ この翻訳ができているかどうかで、書類通過率が大きく変わります。書き方から一緒に整えます。</p>
+    </div>
+  </section>
+
+  <!-- ============ ROUTES ============ -->
+  <section id="routes">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-index">05 — 年収を上げる3つのルート</span>
+        <h2>上げ方は、<br>3通りしかありません。</h2>
+        <p>どれが現実的かは、ご経験と年齢とご家庭の状況で変わります。面談ではこの3つを並べて、優先順位を一緒に決めます。</p>
+      </div>
+      <div class="rt">
+        <div class="rt-c rv">
+          <span class="no">01</span>
+          <h3>ドメインを変える</h3>
+          <p>技術スタックはそのまま、扱う製品領域を変える。<b>いちばん再現性が高く、学び直しの負担も小さい</b>王道ルートです。家電から車載へ、産業機器から半導体へ、といった移り方になります。</p>
+          <div class="ex"><b>効く人</b> ── 実装力に自信があり、学習より即戦力性で勝負したい方</div>
+        </div>
+        <div class="rt-c rv">
+          <span class="no">02</span>
+          <h3>レイヤーを上げる</h3>
+          <p>実装だけでなく、アーキテクチャ設計や開発全体の統括まで担当範囲を広げる。<b>技術がわかるマネジメント人材は市場に足りていません。</b>ただし、手を動かす時間は確実に減ります。</p>
+          <div class="ex"><b>効く人</b> ── 若手の面倒を見てきた／外注管理の経験がある方</div>
+        </div>
+        <div class="rt-c rv">
+          <span class="no">03</span>
+          <h3>収益構造の違う会社へ</h3>
+          <p>ソフトが原価ではなく売上である会社に移る。<b>同じ仕事でも給与テーブルそのものが変わります。</b>外資系、ファブレス、ハードウェアSaaS、スタートアップなど。伸び幅は最も大きく、安定性は下がります。</p>
+          <div class="ex"><b>効く人</b> ── 年収の伸び幅を最優先したい方／SOも含めて比較できる方</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HONEST ============ -->
+  <section class="band" id="honest">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-index">06 — 移って、失うもの</span>
+        <h2>年収だけを見て動くと、<br>だいたい後悔します。</h2>
+        <p>得るものと同じ分量で、手放すものもお伝えします。ここを踏まえたうえで決めていただきたいからです。</p>
+      </div>
+      <div class="hn">
+        <div class="hn-col get rv">
+          <header><span class="mk">+</span><h3>得られるもの</h3></header>
+          <ul>
+            <li><b>ソフト基準の給与テーブル。</b>同じ仕事でも、ソフトが売上である会社では評価の物差しごと変わります。</li>
+            <li><b>製品全体を見る視界。</b>分業から出ると、自分の担当が売上にどう効いたかが見えるようになります。</li>
+            <li><b>市場で通じる実績。</b>「何を作ったか」を語れるようになり、次の転職でも武器になります。</li>
+            <li><b>選択肢としての外資・スタートアップ。</b>SOや年俸制など、報酬の設計自体が違う土俵に立てます。</li>
+          </ul>
+        </div>
+        <div class="hn-col lose rv">
+          <header><span class="mk">−</span><h3>手放すもの</h3></header>
+          <ul>
+            <li><b>量産を出しきる達成感。</b>数百万台に載る、という規模感は大手メーカーならではのものです。</li>
+            <li><b>手厚い設備と検証環境。</b>実験機材やEMC設備が潤沢な環境は、当たり前ではありません。</li>
+            <li><b>安定した雇用と福利厚生。</b>特にスタートアップでは、制度面の手厚さは期待できません。</li>
+            <li><b>じっくり作る時間。</b>ソフト主導の会社は開発サイクルが速く、品質への向き合い方も変わります。</li>
+          </ul>
+        </div>
+      </div>
+      <p class="hn-note rv">
+        <b>「いまの会社に残るほうがいい」とお伝えすることもあります。</b>
+        製品への思い入れや、いまの環境でしか積めない経験があるなら、それは年収以上の価値です。
+        面談では、動かないという選択肢も含めて比較材料をお出しします。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section id="process">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-index">07 — 支援の流れ</span>
+        <h2>まず、いまの市場価値を<br>数字で出します。</h2>
+        <p>転職するかどうかは、その数字を見てから決めていただければ十分です。</p>
+      </div>
+      <div class="proc">
+        <div class="step rv"><span class="marker">01</span><span class="ph">INTERVIEW</span><h3>初回面談</h3><p>担当してきた製品、技術スタック、開発工程、譲れない条件をうかがいます。（オンライン30〜60分）</p></div>
+        <div class="step rv"><span class="marker">02</span><span class="ph">PRICING</span><h3>市場価値の見立て</h3><p>ご経験がどの領域でいくらの値段がつくかを、具体的なレンジでお伝えします。ここが一番のご相談動機になることが多いです。</p></div>
+        <div class="step rv"><span class="marker">03</span><span class="ph">TRANSLATE</span><h3>職務経歴書の翻訳</h3><p>「担当工程」ではなく「何ができる人か」で書き直します。組込みの経歴書は、ここで最も差がつきます。</p></div>
+        <div class="step rv"><span class="marker">04</span><span class="ph">APPLY</span><h3>求人提案・面接対策</h3><p>非公開求人を含めてご紹介。技術面接で聞かれる観点を領域ごとに整理してお渡しします。日程調整は代行します。</p></div>
+        <div class="step rv"><span class="marker">05</span><span class="ph">OFFER</span><h3>内定・条件交渉</h3><p>基本給に加え、賞与・SO・裁量労働の有無まで含めた実質待遇で比較し、交渉します。</p></div>
+        <div class="step rv"><span class="marker">06</span><span class="ph">AFTER</span><h3>入社後フォロー</h3><p>開発文化の違いに慣れるまでが山場です。入社後も継続してご相談に乗ります。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="band" id="faq">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-index">08 — よくある質問</span>
+        <h2>ご相談の前に。</h2>
+      </div>
+      <div class="faq">
+        <details class="rv"><summary><span class="q">Q1</span>本当に年収は上がりますか？<span class="chev">▾</span></summary><p>領域と会社の収益構造によります。上がる方もいれば、横ばいの提示しか出ない方もいます。だから最初に「いまのご経験にいくらの値段がつくか」を具体的なレンジでお伝えし、それを見てから動くかどうかを決めていただいています。無責任に「上がります」とは申し上げません。</p></details>
+        <details class="rv"><summary><span class="q">Q2</span>C言語しか書けなくても大丈夫ですか？<span class="chev">▾</span></summary><p>問題ありません。低レイヤをC/C++で書けること自体が、いま最も供給の薄いスキルです。むしろ「モダンな言語ができないから」と引け目を感じて応募先を狭めてしまうことのほうが、機会損失になっています。</p></details>
+        <details class="rv"><summary><span class="q">Q3</span>40代でも可能性はありますか？<span class="chev">▾</span></summary><p>あります。組込み領域は若手の供給が細く、経験者の市場価値が年齢で急落しにくいのが特徴です。40代以降は「特定領域の深さ」か「開発全体を回せること」のどちらかを軸に組み立てるのが現実的です。</p></details>
+        <details class="rv"><summary><span class="q">Q4</span>車載やAUTOSARの経験がないと厳しいですか？<span class="chev">▾</span></summary><p>そんなことはありません。家電・産業機器・通信機器などからの転職は普通に成立しています。AUTOSARのような業界固有の知識は入社後に習得する前提の求人も多く、選考で見られるのはその手前の設計力とデバッグ力です。</p></details>
+        <details class="rv"><summary><span class="q">Q5</span>スタートアップは不安なのですが。<span class="chev">▾</span></summary><p>無理におすすめしません。年収の伸び幅は大きい一方、制度面や安定性は確実に落ちます。ご家庭の状況によっては、外資系や上場企業のソフト主導部門のほうが合うこともあります。3つのルートを並べて、優先順位から一緒に決めます。</p></details>
+        <details class="rv"><summary><span class="q">Q6</span>在職中でも相談できますか？費用は？<span class="chev">▾</span></summary><p>はい。ご相談者の多くが在職中です。面談はオンラインで平日夜・休日も対応し、選考の日程調整は代行します。ご相談から入社後のフォローまで、求職者の方に費用は一切かかりません。</p></details>
+        <details class="rv"><summary><span class="q">Q7</span>まだ転職を決めていないのですが。<span class="chev">▾</span></summary><p>むしろ歓迎です。市場価値を知るためだけのご利用で構いません。「いまの会社に残るほうがいい」とお伝えすることもあります。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL ============ -->
+  <section id="entry">
+    <div class="wrap">
+      <div class="final rv">
+        <span class="eyebrow">GET STARTED — 相談1分・完全無料</span>
+        <h2>まず、いまの自分に<br>いくらの値段がつくか。</h2>
+        <p>担当してきた製品と技術をうかがえば、どの領域でどのレンジが狙えるかをその場でお伝えできます。動くかどうかは、そのあとで構いません。</p>
+        <div class="hero-cta">
+          <a href="https://calendly.com/r_matsuoka" target="_blank" rel="noopener" class="btn btn-primary btn-lg">無料で年収の見立てを聞く →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-sites">
+      <p class="ft-sites-title">ほかの特設サイト</p>
+    </div>
+    <nav class="ft-links ft-sites-links">
+      <a href="https://pm.agent-best.net/" target="_blank" rel="noopener">PM特化 転職 &#8599;</a>
+      <a href="https://eng.agent-best.net/" target="_blank" rel="noopener">エンジニア→コンサル転職 &#8599;</a>
+      <a href="https://ma.agent-best.net/" target="_blank" rel="noopener">未経験からM&amp;A &#8599;</a>
+      <a href="https://consul.agent-best.net/" target="_blank" rel="noopener">未経験からコンサル &#8599;</a>
+      <a href="https://engineer.agent-best.net/" target="_blank" rel="noopener">未経験からエンジニア &#8599;</a>
+      <a href="https://student.agent-best.net/" target="_blank" rel="noopener">学生キャリア支援 &#8599;</a>
+    </nav>
+    <nav class="ft-links">
+      <a href="https://www.agent-best.net/" target="_blank" rel="noopener">エージェントベスト公式サイト &#8599;</a>
+      <a href="https://jobs.agent-best.net/" target="_blank" rel="noopener">求人検索 &#8599;</a>
+      <a href="https://calendly.com/r_matsuoka" target="_blank" rel="noopener">無料で年収診断 &#8599;</a>
+    </nav>
+    <div class="ft-in">
+      <div class="brand"><span class="glyph">AB</span><span>AGENTBEST<small>EMBEDDED / IoT</small></span></div>
+      <p class="disc">
+        ※ 掲載した数値は公表された調査に基づく引用です。国内IoT市場のユーザー支出額（2023年 6兆9,189億円 → 2028年 10兆1,653億円、CAGR 8.0%）は IDC Japan「国内IoT市場 産業分野別／テクノロジー別予測」、正社員の平均年収およびITエンジニアの業種別平均年収はパーソルキャリア「doda 平均年収ランキング2025」によります。将来予測は確定値ではなく、平均年収は個人の年収を保証するものではありません。<br>
+        © AGENTBEST. IoT・組込みエンジニアの転職支援。
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var els=document.querySelectorAll('.rv');
+    var fills=document.querySelectorAll('.fill[data-w]');
+    if(!('IntersectionObserver' in window)){
+      els.forEach(function(e){e.classList.add('in')});
+      fills.forEach(function(f){f.style.width=f.getAttribute('data-w');});
+      return;
+    }
+    var io=new IntersectionObserver(function(en){
+      en.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.classList.add('in');
+          e.target.querySelectorAll('.fill[data-w]').forEach(function(f){f.style.width=f.getAttribute('data-w');});
+          io.unobserve(e.target);
+        }
+      });
+    },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(e,i){e.style.transitionDelay=(Math.min(i%4,3)*60)+'ms';io.observe(e);});
+    setTimeout(function(){
+      fills.forEach(function(f){if(!f.closest('.rv')) f.style.width=f.getAttribute('data-w');});
+    },300);
+  })();
+</script>
