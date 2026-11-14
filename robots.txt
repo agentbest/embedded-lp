@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kumikomitenshoku.com/sitemap.xml
+Sitemap: https://lp.kumikomitenshoku.com/sitemap.xml
